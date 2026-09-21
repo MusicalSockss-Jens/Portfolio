@@ -3,29 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Jens, a third-year digital design student focusing on UI/UX, 3D art, and accessible front-end development.">
     <title>My Portfolio | About Me</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="container site-nav">
+            <a href="index.html" class="brand"><span>J</span>Jens</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <main class="container">
+        <section class="hero" aria-labelledby="about-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Creative technologist</p>
+                <h1 id="about-title">Designing digital experiences that feel human.</h1>
+                <p>Hi, I’m Jens — a third-year student with the heart of a designer and the mindset of a front-end developer. I enjoy building interfaces that are not only beautiful, but also meaningful, inclusive, and easy to use.</p>
+                <p>My focus sits at the intersection of <strong>UI/UX design</strong>, <strong>3D art</strong>, and <strong>web accessibility</strong>. I care deeply about structure, clarity, and emotional impact, which is why I work with semantic HTML, deliberate color systems, and user-first thinking.</p>
+                <div class="cta-row">
+                    <a class="button primary" href="projects.html">View projects</a>
+                    <a class="button secondary" href="contact.html">Contact me</a>
+                </div>
+            </div>
 
-    <main>
-        <h1>About Me</h1>
-        <p>Hey! Ik ben een derdejaars XD-student met het hart van een designer en de skills van een front-end developer. Waar de meeste programmeurs zich verschuilen in de backend, bloei ik op aan de visuele en menselijke kant van software. Mijn passie ligt bij de perfecte synergie tussen <strong>UI/UX Design, 3D en Web Accessibility (a11y)</strong>.</p>
-        
-        <p>Ik geloof dat een website een visueel kunstwerk mag zijn, zolang het maar bruikbaar blijft voor <em>iedereen</em> — inclusief gebruikers met een beperking of hulpsoftware. Dit is ook een van de redenen waarom ik op Ubuntu Linux werk; het dwingt me om kritisch te kijken naar open webstandaarden, semantiek en platformonafhankelijkheid. Mijn doel is om interfaces te ontwerpen die niet alleen mooi ogen, maar die digitaal toegankelijk zijn voor elke eindgebruiker.</p>
+            <aside class="hero-card" aria-label="Profile overview">
+                <h2>What I bring</h2>
+                <ul>
+                    <li>Visual design with a strong UX mindset</li>
+                    <li>3D scene design and stylized asset creation</li>
+                    <li>Accessible, semantic front-end development</li>
+                    <li>Linux-based workflow and clean Git practices</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="section" aria-labelledby="strengths-title">
+            <div class="section-heading">
+                <h2 id="strengths-title">Core strengths</h2>
+            </div>
+            <div class="grid-3">
+                <article class="card">
+                    <div class="icon">UX</div>
+                    <h3>User-centered design</h3>
+                    <p>I design interfaces around clarity, interaction flow, and accessibility so users can move through digital products with confidence.</p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">3D</div>
+                    <h3>3D craftsmanship</h3>
+                    <p>From scene composition to materials and lighting, I explore 3D as a storytelling tool that adds atmosphere and depth.</p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">A11Y</div>
+                    <h3>Accessible web</h3>
+                    <p>I build with inclusive standards in mind, making sure content remains readable, navigable, and usable for everyone.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="highlight-band" aria-labelledby="philosophy-title">
+            <h2 id="philosophy-title">My design philosophy</h2>
+            <p>I believe a website can be artistic without sacrificing usability. Good design should feel refined, but it must also work for real people — including users relying on assistive technology, keyboard navigation, or alternative devices. That principle shapes both my creative and technical work.</p>
+        </section>
     </main>
 
-    <footer>
+    <footer class="container">
         <p>&copy; 2026 Jens</p>
     </footer>
-
 </body>
 </html>

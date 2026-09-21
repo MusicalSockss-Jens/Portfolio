@@ -3,44 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Featured portfolio projects by Jens, including Blender 3D work and a Linux-based portfolio build.">
     <title>My Portfolio | Projects</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="container site-nav">
+            <a href="index.html" class="brand"><span>J</span>Jens</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html" aria-current="page">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <main class="container">
+        <header class="page-header">
+            <p class="eyebrow">Selected work</p>
+            <h1>Creative milestones & featured work</h1>
+            <p>These projects reflect the mix of visual storytelling, technical thinking, and accessibility-focused design that defines my work.</p>
+        </header>
 
-    <main>
-        <h1>Creative Milestones & Featured Work</h1>
+        <div class="project-grid">
+            <article class="project-card">
+                <img src="imgs/projectBlender-render.png" alt="3D Blender render of a stylized noodle stand scene">
+                <div class="content">
+                    <span class="project-tag">3D art</span>
+                    <h3>3D Environment Design</h3>
+                    <p>Creating a fully modeled and lit scene from scratch, balancing detail, mood, and performance for an immersive low-poly look.</p>
+                    <div class="meta">
+                        <span>Blender</span>
+                        <a href="project-blender.html">Read case study →</a>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Project 1 Overzicht -->
-        <article>
-            <h2>3D Environment Design (Blender)</h2>
-            <p><strong>Focus:</strong> Sfeercreatie, compositie en realtime mesh-optimalisatie.</p>
-            <p>Mijn meest trotse creatieve project waarin ik een volledige 3D-wereld vanaf de basis heb gemodelleerd en belicht.</p>
-            <a href="project-blender.html">Read full case study &rarr;</a>
-        </article>
-
-        <hr>
-
-        <!-- Project 2 Overzicht -->
-        <article>
-            <h2>Agile Portfolio Development on Linux</h2>
-            <p><strong>Stack:</strong> Ubuntu Linux, GitKraken, Semantische HTML5</p>
-            <p>Een vliegende eindsprint waarin ik binnen één week een compleet nieuw OS configureerde én dit multipage portfolio lanceerde.</p>
-            <a href="project-portfolio.html">Read full case study &rarr;</a>
-        </article>
+            <article class="project-card">
+                <div class="content" style="padding-top: 1.6rem;">
+                    <span class="project-tag">Front-end</span>
+                    <h3>Agile Portfolio Development</h3>
+                    <p>A rapid portfolio launch built in a Linux environment, focused on semantic HTML, accessibility, and a clean development workflow.</p>
+                    <div class="meta">
+                        <span>Ubuntu + HTML</span>
+                        <a href="project-portfolio.html">Read case study →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
     </main>
 
-    <footer>
+    <footer class="container">
         <p>&copy; 2026 Jens</p>
     </footer>
-
 </body>
 </html>

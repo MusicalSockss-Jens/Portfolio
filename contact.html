@@ -3,32 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for Jens, including email and GitHub details.">
     <title>My Portfolio | Contact</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="container site-nav">
+            <a href="index.html" class="brand"><span>J</span>Jens</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <main class="container">
+        <header class="page-header">
+            <p class="eyebrow">Get in touch</p>
+            <h1>Let’s create something thoughtful.</h1>
+            <p>I’m especially interested in creative problem-solving, accessible interfaces, and collaborative design work. If you want to talk about a project, internship, or concept, I’d love to hear from you.</p>
+        </header>
 
-    <main>
-        <h1>Let's Create Something Inclusive</h1>
-        <p>Aangezien ik geloof in een focus op code en design in plaats van socialmedia-feeds, is mijn code-repository mijn belangrijkste visitekaartje. Je kunt mijn voortgang, commits en projecten bekijken op GitHub, of rechtstreeks contact met me opnemen via e-mail.</p>
-        
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:jouw.studentenmail@school.be">jouw.studentenmail@school.be</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com" target="_blank">://github.com</a></li>
-        </ul>
+        <div class="contact-grid">
+            <section class="contact-panel">
+                <h2>Contact details</h2>
+                <ul class="contact-list">
+                    <li><strong>Email:</strong> <a href="mailto:jens@studentmail.be">jens@studentmail.be</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com" target="_blank" rel="noreferrer">github.com/jens</a></li>
+                    <li><strong>Location:</strong> Belgium</li>
+                </ul>
+            </section>
+
+            <aside class="contact-panel">
+                <h2>What I’m looking for</h2>
+                <p>Projects where design and development work together, and where accessibility is treated as a core requirement rather than an afterthought.</p>
+            </aside>
+        </div>
     </main>
 
-    <footer>
+    <footer class="container">
         <p>&copy; 2026 Jens</p>
     </footer>
-
 </body>
 </html>

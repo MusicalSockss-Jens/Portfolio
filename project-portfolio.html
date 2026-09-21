@@ -3,38 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Case study for a Linux-based portfolio project built with semantic HTML and strong workflow discipline.">
     <title>Project | Agile Portfolio Development</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="container site-nav">
+            <a href="index.html" class="brand"><span>J</span>Jens</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <main class="container">
+        <a class="back-link" href="projects.html">&larr; Back to Projects</a>
 
-    <main>
-        <p><a href="projects.html">&larr; Back to Projects</a></p>
-        
-        <h1>Case Study: Agile Portfolio Development on Linux</h1>
-        <p><strong>Role:</strong> Frontend Developer | <strong>Stack:</strong> Ubuntu OS, GitKraken, HTML5</p>
+        <div class="case-study">
+            <article>
+                <header class="page-header" style="padding-top: 0;">
+                    <p class="eyebrow">Case study</p>
+                    <h1>Agile Portfolio Development on Linux</h1>
+                    <p><strong>Role:</strong> Frontend Developer | <strong>Stack:</strong> Ubuntu OS, GitKraken, HTML5</p>
+                </header>
 
-        <h2>Project Overview</h2>
-        <p>Dit project is ontstaan uit een strakke deadline aan de start van het academiejaar. Het doel was om in minder dan een week tijd een volledige transitie te maken naar een Linux-ontwikkelomgeving én tegelijkertijd een functioneel, multipage portfolio op te leveren.</p>
+                <div class="content-block">
+                    <h2>Project overview</h2>
+                    <p>This project came together under a tight deadline at the start of the academic year. The goal was to transition to a Linux-based development environment and launch a complete multi-page portfolio quickly, without sacrificing structure or content quality.</p>
+                </div>
 
-        <h2>The Linux Workflow</h2>
-        <p>In plaats van te vertrouwen op Windows, heb ik dit project volledig opgebouwd binnen Ubuntu Linux. Ik heb de terminal geconfigureerd met de juiste keyboard-mapping (English US intl. met dead keys) en GitKraken gekoppeld aan GitHub voor een feilloos, visueel versiebeheer. Dit dwong me om direct vanaf dag één agile te schakelen in een nieuw OS.</p>
+                <div class="content-block">
+                    <h2>The Linux workflow</h2>
+                    <p>Instead of relying on a familiar Windows setup, I built the work entirely in Ubuntu. I configured the terminal for a comfortable workflow, adapted the keyboard layout for efficient input, and connected GitKraken to GitHub for a clear visual version-control process. That forced me to adapt quickly and work in a cleaner, more disciplined environment from the start.</p>
+                </div>
 
-        <h2>Focus on Content & Semantics</h2>
-        <p>Omdat de tijd beperkt was en webtoegankelijkheid (a11y) mijn kernwaarde is, heb ik er bewust voor gekozen om zware frameworks links te laten liggen. De focus lag volledig op pure, semantische HTML5. De structuur is zo opgebouwd dat screenreaders de content logisch kunnen verwerken, wat de perfecte fundering vormt voor de stylingfase die hierna volgt.</p>
+                <div class="content-block">
+                    <h2>Focus on content & semantics</h2>
+                    <p>Because the timeline was short and accessibility is central to my values, I intentionally avoided heavy frameworks. The project is built around semantic HTML5 and strong page structure so content remains clear for screen readers and easy to extend later. This gave me a stable foundation for the visual styling phase.</p>
+                </div>
+            </article>
+
+            <aside class="summary-card">
+                <h3>Project snapshot</h3>
+                <ul>
+                    <li>Built in a Linux-first developer setup</li>
+                    <li>Managed with Git and GitHub</li>
+                    <li>Structured around accessibility and semantics</li>
+                    <li>Designed for quick iteration and clean handoff</li>
+                </ul>
+            </aside>
+        </div>
     </main>
 
-    <footer>
+    <footer class="container">
         <p>&copy; 2026 Jens</p>
     </footer>
-
 </body>
 </html>

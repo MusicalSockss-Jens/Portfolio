@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skills overview for Jens, including design, 3D art, frontend development, and accessibility work.">
     <title>My Portfolio | Technical Skills</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="container site-nav">
+            <a href="index.html" class="brand"><span>J</span>Jens</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="skills.html" aria-current="page">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <main class="container">
+        <header class="page-header">
+            <p class="eyebrow">Toolkit</p>
+            <h1>My Creative & Frontend Toolkit</h1>
+            <p>I combine visual design instincts with a structured technical workflow to create work that is both polished and practical.</p>
+        </header>
 
-    <main>
-        <h1>My Creative & Frontend Toolkit</h1>
-        
-        <h2>Design & 3D Art</h2>
-<ul>
-    <li><strong>3D Modeling & Scene Creation:</strong> Blender (mijn absolute creatieve uitlaatklep voor meshes, texturing en belichting).</li>
-    <li><strong>3D Texturing:</strong> Handgeschilderde en gestileerde textures ontwerpen in 3D via Procreate op iPad Air.</li>
-    <li><strong>UI/UX Design:</strong> Oog voor lay-out, kleurcontrasten (WCAG-richtlijnen) en intuïtieve gebruikersstromen.</li>
-</ul>
+        <div class="skill-list">
+            <article class="card">
+                <div class="icon">3D</div>
+                <h3>Design & 3D Art</h3>
+                <ul>
+                    <li><strong>Blender:</strong> 3D modeling, lighting, scene composition, and low-poly optimization.</li>
+                    <li><strong>Procreate:</strong> Stylized texture exploration and visual concept development.</li>
+                    <li><strong>UI/UX Design:</strong> Layout systems, hierarchy, contrast, and intuitive user journeys.</li>
+                </ul>
+            </article>
 
-
-        <h2>Frontend & Environment</h2>
-        <ul>
-            <li><strong>Semantic HTML5 & CSS3:</strong> Interfaces bouwen die screenreaders begrijpen en die flexibel meeschalen.</li>
-            <li><strong>Vanilla JavaScript:</strong> De basis van interactie, responsive elementen en DOM-manipulatie beheersen.</li>
-            <li><strong>Tools & Workspace:</strong> GitKraken, GitHub, en een schone, afleidingsvrije workflow op Ubuntu Linux (English US Intl. layout).</li>
-        </ul>
+            <article class="card">
+                <div class="icon">Web</div>
+                <h3>Frontend & Environment</h3>
+                <ul>
+                    <li><strong>Semantic HTML5 & CSS3:</strong> Building flexible, accessible interfaces with strong structure.</li>
+                    <li><strong>Vanilla JavaScript:</strong> DOM interactions, responsive behavior, and lightweight interactivity.</li>
+                    <li><strong>Workflow tools:</strong> GitKraken, GitHub, and Ubuntu Linux for a clean, distraction-free setup.</li>
+                </ul>
+            </article>
+        </div>
     </main>
 
-    <footer>
+    <footer class="container">
         <p>&copy; 2026 Jens</p>
     </footer>
-
 </body>
 </html>
